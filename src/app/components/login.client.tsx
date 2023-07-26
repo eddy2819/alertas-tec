@@ -58,59 +58,65 @@ function Login() {
       console.error("Error al iniciar sesión", error);
     }
   };
-
   return (
-    <div className="bg-[#173E6E] flex-colum justify-center items-center h-screen ">
-      <div className="flex justify-center items-center">
-        <span className="text-white text-4xl font-bold mr-2 ">UTPL</span>
-        <img src="path/to/your/logo.png" alt="UTPL Logo" className="w-8 h-8" />
-      </div>
-      <div className="bg-white p-8 shadow-md rounded-md w-96 justify-center ">
-        <h1 className="text-black text-center text-2xl font-bold mb-4">
-          Iniciar sesión
-        </h1>
-        <form onSubmit={handleLogin}>
-          <div className="mb-4">
-            <label htmlFor="email" className="block text-gray-700">
-              Usuario
-            </label>
-            <input
-              type="email"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="w-full border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring focus:border-blue-300"
-              placeholder="Correo electrónico"
-            />
+    <>
+      <section className=" bg-[#173E6E] h-screen">
+        <div className=" container h-full px-6 py-24">
+          <div className="g-6 flex h-full flex-wrap items-center justify-center lg:justify-between mt-0">
+            <div className="mb-12 md:mb-0 md:w-8/12 lg:w-6/12">
+              <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                className="w-full"
+                alt="Phone image"
+              />
+            </div>
+
+            <div className="md:w-8/12 lg:ml-6 lg:w-5/12 bg-white p-8 shadow-md rounded-md w-96">
+              <form onSubmit={handleLogin}>
+                <div className="mb-4">
+                  <label htmlFor="email" className="block text-gray-700">
+                    Usuario
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring focus:border-blue-300"
+                    placeholder="Correo electrónico"
+                  />
+                </div>
+                <div className="mb-6">
+                  <label htmlFor="password" className="block text-gray-700">
+                    Contraseña
+                  </label>
+                  <input
+                    type="password"
+                    id="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    className="w-full border border-gray-300 px-3 py-2 rounded-md  text-black focus:outline-none focus:ring focus:border-blue-300"
+                    placeholder="Contraseña"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  className="w-full bg-blue-500 text-white font-bold py-2 rounded-md hover:bg-blue-600"
+                >
+                  Iniciar sesión
+                </button>
+                <Link
+                  href="/pages/index"
+                  className="text-white font-bold text-center"
+                >
+                  Regístrate
+                </Link>
+              </form>
+            </div>
           </div>
-          <div className="mb-6">
-            <label htmlFor="password" className="block text-gray-700">
-              Contraseña
-            </label>
-            <input
-              type="password"
-              id="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              className="w-full border border-gray-300 px-3 py-2 rounded-md  text-black focus:outline-none focus:ring focus:border-blue-300"
-              placeholder="Contraseña"
-            />
-          </div>
-          <button
-            type="submit"
-            className="w-full bg-blue-500 text-white font-bold py-2 rounded-md hover:bg-blue-600"
-          >
-            Iniciar sesión
-          </button>
-          <Link
-            href="/pages/index"
-            className="text-white font-bold text-center"
-          >
-            Regístrate
-          </Link>
-        </form>
-      </div>
-    </div>
+        </div>
+      </section>
+    </>
   );
 }
 

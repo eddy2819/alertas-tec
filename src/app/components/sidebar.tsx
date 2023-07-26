@@ -58,7 +58,6 @@ const Sidebar = () => {
           <Link
             href="./"
             className="text-[#D3AD45] hover:text-white"
-            target="_blank"
             rel="noopener noreferrer"
           >
             <BiLogOut className="w-10 h-10 hover:text-white" title="Opción 4" />
