@@ -5,7 +5,7 @@ import React from "react";
 import { FaUserAlt, FaEnvelope } from 'react-icons/fa'; // Importa los iconos
 import {RxActivityLog} from 'react-icons/rx';
 import {SlEnvolopeLetter} from 'react-icons/sl';
-import {BiBuilding} from "react-icons/bi";
+import {BiBuilding,BiLogOut} from "react-icons/bi";
 
 const Sidebar = () => {
   return (
@@ -20,7 +20,7 @@ const Sidebar = () => {
           >
             <FaUserAlt className="w-10 h-10 hover:text-white" title="Opción 1" />
           </Link>
-          <span className="text-[#D3AD45] hover:text-white">Opción 1</span>
+          <span className="text-[#D3AD45] hover:text-white">Cuenta</span>
         </li>
         <li className="flex flex-col items-center">
           <Link
@@ -30,7 +30,7 @@ const Sidebar = () => {
           >
             <BiBuilding className="w-10 h-10 hover:text-white" title="Opción 2" />
           </Link>
-          <span className="text-[#D3AD45] hover:text-white">Opción 2</span>
+          <span className="text-[#D3AD45] hover:text-white">Plazas</span>
         </li>
         <li className="flex flex-col items-center">
           <Link
@@ -40,7 +40,7 @@ const Sidebar = () => {
           >
             <RxActivityLog className="w-10 h-10 hover:text-white" title="Opción 3" />
           </Link>
-          <span className="text-[#D3AD45] hover:text-white">Opción 3</span>
+          <span className="text-[#D3AD45] hover:text-white">Actividades</span>
         </li>
         <li className="flex flex-col items-center">
           <Link
@@ -51,7 +51,19 @@ const Sidebar = () => {
           >
             <SlEnvolopeLetter className="w-10 h-10 hover:text-white" title="Opción 4" />
           </Link>
-          <span className="text-[#D3AD45] hover:text-white">Opción 4</span>
+          <span className="text-[#D3AD45] hover:text-white">Buzon</span>
+        </li>
+
+        <li className="flex flex-col items-center">
+          <Link
+            href="./"
+            className="text-[#D3AD45] hover:text-white"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <BiLogOut className="w-10 h-10 hover:text-white" title="Opción 4" />
+          </Link>
+          <span className="text-[#D3AD45] hover:text-white"></span>
         </li>
         {/* Agrega más opciones de menú según tus necesidades */}
       </ul>

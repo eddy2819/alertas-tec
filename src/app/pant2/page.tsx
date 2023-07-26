@@ -19,10 +19,10 @@ function User() {
             </h2>
           <div className="w-50 h-1 bg-gray-950 my-10"></div>
           <div className="text-[#173E6E] text-center space-y-10">
-            <h3>Perfil</h3>
-            <h3>Archivos</h3>
-            <h3>Historial</h3>
-            <h3>cerrar sesión</h3>
+            <h3 className="font-bold">Perfil</h3>
+            <h3 className="font-bold">Archivos</h3>
+            <h3 className="font-bold">Historial</h3>
+            <h3 className="font-bold">cerrar sesión</h3>
           </div>
         </div>
       </div>
