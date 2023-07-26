@@ -9,14 +9,13 @@ import {BiBuilding} from "react-icons/bi";
 
 const Sidebar = () => {
   return (
-    <div className="h-screen w-40 bg-blue-900 text-white p-4 flex flex-col items-center">
+    <div className="h-screen w-30 bg-blue-900 text-white p-4 flex flex-col items-center">
       <h2 className="text-3xl font-bold mb-8">UTPL</h2>
       <ul className="flex flex-col items-center space-y-10">
         <li className="flex flex-col items-center">
           <Link
-            href="#"
+            href="./pant2"
             className="text-[#D3AD45] hover:text-white"
-            target="_blank"
             rel="noopener noreferrer"
           >
             <FaUserAlt className="w-10 h-10 hover:text-white" title="Opción 1" />
@@ -25,9 +24,8 @@ const Sidebar = () => {
         </li>
         <li className="flex flex-col items-center">
           <Link
-            href="/pant1"
+            href="./pant1"
             className="text-[#D3AD45] hover:text-white"
-            target="_blank"
             rel="noopener noreferrer"
           >
             <BiBuilding className="w-10 h-10 hover:text-white" title="Opción 2" />
@@ -36,9 +34,8 @@ const Sidebar = () => {
         </li>
         <li className="flex flex-col items-center">
           <Link
-            href="#"
+            href="./pant3"
             className="text-[#D3AD45] hover:text-white"
-            target="_blank"
             rel="noopener noreferrer"
           >
             <RxActivityLog className="w-10 h-10 hover:text-white" title="Opción 3" />
