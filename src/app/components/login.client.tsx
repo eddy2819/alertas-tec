@@ -37,7 +37,7 @@ function Login() {
 
   useEffect(() => {
     if (isLoggedIn) {
-      window.location.href = "./pant1"; // Cambia '/otra-pagina' a la ruta de la página a la que quieres redirigir.
+      window.location.href = "./pant4"; // Cambia '/otra-pagina' a la ruta de la página a la que quieres redirigir.
     }
   }, [isLoggedIn]);
 
@@ -59,9 +59,11 @@ function Login() {
     }
   };
   return (
-    <>
+   
+      <>
       <section className=" bg-[#173E6E] h-screen">
         <div className=" container h-full px-6 py-24">
+          <p className="text-center text-3xl"> UTPL-TEC</p>
           <div className="g-6 flex h-full flex-wrap items-center justify-center lg:justify-between mt-0">
             <div className="mb-12 md:mb-0 md:w-8/12 lg:w-6/12">
               <img

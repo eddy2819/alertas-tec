@@ -36,16 +36,16 @@ function PlazasPage() {
           <div className="w-100">
             <h3 className="text-[#D3AD45] bg-[#173E6E] ">Actividad 1</h3>
             <p>...............................................</p>
-            <p className="text-[#173E6E] items-center">Entrega de Horarios</p>
+            <p className="text-[#173E6E] items-center">Informe</p>
           </div>
           <div className="w-400">
             <h3 className="text-[#D3AD45] bg-[#173E6E]">Fecha de entrega</h3>
             <p>...............................................</p>
             <p className="text-[#173E6E] items-center">20/07/2023</p>
           </div>
-          <div className="flex flex-col items-center justify-center">
+          <div className=" flex flex-col items-center justify-center">
             <h3 className="text-[#D3AD45] bg-[#173E6E]">Estado</h3>
-            <p>...............................................</p>
+            <p>..................................................</p>
             <IoClose
               className="w-10 h-10 hover:text-[#D3AD45] text-[#D3AD45]"
               title="Opción 3"
@@ -58,7 +58,7 @@ function PlazasPage() {
           <div className="w-100">
             <h3 className="text-[#D3AD45] bg-[#173E6E] ">Actividad 1</h3>
             <p>...............................................</p>
-            <p className="text-[#173E6E] items-center">Entrega de Horarios</p>
+            <p className="text-[#173E6E] items-center">Rubrica</p>
           </div>
           <div className="w-400">
             <h3 className="text-[#D3AD45] bg-[#173E6E]">Fecha de entrega</h3>
@@ -71,6 +71,7 @@ function PlazasPage() {
             <IoClose
               className="w-10 h-10 hover:text-[#D3AD45] text-[#D3AD45]"
               title="Opción 3"
+              
             />
           </div>
         </div>

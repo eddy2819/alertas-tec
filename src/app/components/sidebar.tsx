@@ -9,7 +9,7 @@ import {BiBuilding,BiLogOut} from "react-icons/bi";
 
 const Sidebar = () => {
   return (
-    <div className="h-screen w-30 bg-blue-900 text-white p-4 flex flex-col items-center">
+    <div className="min-h-screen w-30 bg-blue-900 text-white p-4 flex flex-col items-center">
       <h2 className="text-3xl font-bold mb-8">UTPL</h2>
       <ul className="flex flex-col items-center space-y-10">
         <li className="flex flex-col items-center">
@@ -24,7 +24,7 @@ const Sidebar = () => {
         </li>
         <li className="flex flex-col items-center">
           <Link
-            href="./pant1"
+            href="./pant4"
             className="text-[#D3AD45] hover:text-white"
             rel="noopener noreferrer"
           >
@@ -44,7 +44,7 @@ const Sidebar = () => {
         </li>
         <li className="flex flex-col items-center">
           <Link
-            href="#"
+            href="./pant6"
             className="text-[#D3AD45] hover:text-white"
             target="_blank"
             rel="noopener noreferrer"
